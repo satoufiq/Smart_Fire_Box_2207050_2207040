@@ -11,10 +11,11 @@ This project demonstrates a practical multi-zone safety system for early fire de
 
 | Folder / File | Description |
 |---|---|
-| `ESP 32#1, SENSOR Unit.ino` | Sensor unit firmware for reading all 4 zones and sending UART packets. |
-| `esp 32 #2 actuator unit.ino` | Actuator unit firmware for parsing sensor data and controlling response hardware. |
-| `Smart_Fire_Box__Report.pdf` | Project report and documentation. |
-| `Visuals - Demo Video and Pictures/` | Demonstration video and supporting images. |
+| `Sensor unit code/ESP 32#1, SENSOR Unit.ino` | Sensor unit firmware for reading all 4 zones and sending UART packets. |
+| `Actuator unit code/esp 32 #2 actuator unit.ino` | Actuator unit firmware for parsing sensor data and controlling response hardware. |
+| `Report/Smart_Fire_Box__Report.pdf` | Project report and documentation. |
+| `Demonstration Video/Smar Fire Box - Project Demonstration.mp4` | Demonstration video. |
+| `Visuals/` | Supporting images and interface screenshots. |
 
 ## Project Overview
 
@@ -122,42 +123,49 @@ The actuator unit mirrors data to the Blynk dashboard for live visualization.
 - Blynk library
 
 ### Installation
-1. Open both `.ino` files in Arduino IDE.
+1. Open `Sensor unit code/ESP 32#1, SENSOR Unit.ino` and `Actuator unit code/esp 32 #2 actuator unit.ino` in Arduino IDE.
 2. Install the required libraries.
 3. Configure Wi-Fi and Blynk credentials in the actuator sketch.
 4. Connect ESP32 #1 TX to ESP32 #2 RX.
 5. Share a common ground between all modules.
 6. Upload the sensor sketch to ESP32 #1 and the actuator sketch to ESP32 #2.
 
-## Recommended Repository Structure
+## Repository Structure
 
 ```text
 Smart_Fire_Box_2207050_2207040/
 ├── README.md
-├── code/
-│   ├── sensor-unit/
-│   │   └── ESP 32#1, SENSOR Unit.ino
-│   └── actuator-unit/
-│       └── esp 32 #2 actuator unit.ino
-├── report/
+├── Sensor unit code/
+│   └── ESP 32#1, SENSOR Unit.ino
+├── Actuator unit code/
+│   └── esp 32 #2 actuator unit.ino
+├── Report/
 │   └── Smart_Fire_Box__Report.pdf
-└── media/
-    └── demo/
-        └── Visuals - Demo Video and Pictures/
+├── Demonstration Video/
+│   └── Smar Fire Box - Project Demonstration.mp4
+└── Visuals/
+    ├── Blynk Interface - Datastreams (1-14).jpeg.png
+    ├── Blynk Interface - Datastreams (15-25).jpeg.png
+    ├── Blynk Interface -Device Dashboard.jpeg.png
+    ├── Blynk Interface -Events and Notifications.jpeg.png
+    ├── Side view of Zone 2 — water pump container, sensor wiring, and exhaust fan.jpeg
+    ├── Top-down view — two ESP32 DevKit V1 boards on breadboards with relay module and wiring.jpeg
+    ├── Underside view — DHT11, HC-SR04, flame sensor, and SG90 nozzle servo mechanism.jpeg
+    └── Zone 1 front panel — emergency exit door servo, HC-SR04, flame sensor, MQ-2, and exhaust fan.jpg
 ```
 
 ## Notes
 
-- The current repository stores all project files in the root directory. For a cleaner and more professional presentation, it is recommended to reorganize the files into dedicated folders such as `code/`, `report/`, and `media/`.
 - The actuator sketch currently contains Wi-Fi and Blynk credentials in plain text. These should be replaced with placeholders before public sharing.
 
 ## Demonstration Video
 
-The demonstration video and related visuals are available in the `Visuals - Demo Video and Pictures` folder.
+The demonstration video is available in `Demonstration Video/Smar Fire Box - Project Demonstration.mp4`.
+Supporting images are available in the `Visuals/` folder.
 
 ## Report
 
-The project report is included as `Smart_Fire_Box__Report.pdf`.
+The project report is included as `Report/Smart_Fire_Box__Report.pdf`.
 
 ## License
 
