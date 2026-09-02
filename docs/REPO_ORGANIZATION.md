@@ -7,20 +7,27 @@ This repository contains a dual-ESP32 fire detection and response system with:
 - a **project report**
 - a **demo video / visual evidence** folder
 
-## Suggested layout
+## Repository layout
 
 ```text
 Smart_Fire_Box_2207050_2207040/
-├── code/
-│   ├── sensor-unit/
-│   │   └── ESP 32#1, SENSOR Unit.ino
-│   └── actuator-unit/
-│       └── esp 32 #2 actuator unit.ino
-├── report/
+├── Sensor unit code/
+│   └── ESP 32#1, SENSOR Unit.ino
+├── Actuator unit code/
+│   └── esp 32 #2 actuator unit.ino
+├── Report/
 │   └── Smart_Fire_Box__Report.pdf
-├── media/
-│   └── demo/
-│       └── Visuals - Demo Video and Pictures/
+├── Demonstration Video/
+│   └── Smar Fire Box - Project Demonstration.mp4
+├── Visuals/
+│   ├── Blynk Interface - Datastreams (1-14).jpeg.png
+│   ├── Blynk Interface - Datastreams (15-25).jpeg.png
+│   ├── Blynk Interface -Device Dashboard.jpeg.png
+│   ├── Blynk Interface -Events and Notifications.jpeg.png
+│   ├── Side view of Zone 2 — water pump container, sensor wiring, and exhaust fan.jpeg
+│   ├── Top-down view — two ESP32 DevKit V1 boards on breadboards with relay module and wiring.jpeg
+│   ├── Underside view — DHT11, HC-SR04, flame sensor, and SG90 nozzle servo mechanism.jpeg
+│   └── Zone 1 front panel — emergency exit door servo, HC-SR04, flame sensor, MQ-2, and exhaust fan.jpg
 └── README.md
 ```
 
@@ -53,7 +60,10 @@ Z1,<flame>,<smoke>,<temp>,<dist>;Z2,<flame>,<smoke>,<temp>,<dist>;Z3,<flame>,<sm
 The PDF report documents the project design, implementation, and results.
 
 ### 4. Demonstration Video
-The visuals folder contains the demo video and supporting images.
+The demonstration video is in `Demonstration Video/`.
+
+### 5. Visuals
+`Visuals/` contains image files only.
 
 ## Setup
 1. Install Arduino IDE and ESP32 board support.
